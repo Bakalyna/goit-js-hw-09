@@ -1,8 +1,8 @@
 const feedbackFormRef = document.querySelector('.feedback-form');
 feedbackFormRef.addEventListener('input', onFeedbackFormInput);
 function onFeedbackFormInput(e) {
-  const userEmail = feedbackFormRef.elements.email.value;
-  const userMessage = feedbackFormRef.elements.message.value;
+  const userEmail = feedbackFormRef.elements.email.value.trim();
+  const userMessage = feedbackFormRef.elements.message.value.trim();
   const userData = {
     email: userEmail,
     message: userMessage,
@@ -24,8 +24,8 @@ feedbackFormRef.addEventListener('submit', onFeedbackFormSubmit);
 function onFeedbackFormSubmit(e) {
   e.preventDefault();
 
-  const userEmail = feedbackFormRef.elements.email.value;
-  const userMessage = feedbackFormRef.elements.message.value;
+  const userEmail = feedbackFormRef.elements.email.value.trim();
+  const userMessage = feedbackFormRef.elements.message.value.trim();
   if (!userEmail || !userMessage) {
     alert('Error fields is empty');
     return;
