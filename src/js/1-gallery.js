@@ -74,8 +74,7 @@ const markupImg = images.map(
   <a class="gallery-link" href="${original}">
     <img
       class="gallery-image"
-      src="${preview}"
-      data-source="${original}"
+      src="${preview}"  
       alt="${description}"
     />
   </a>
@@ -88,3 +87,4 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
+

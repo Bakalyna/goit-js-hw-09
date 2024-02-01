@@ -13,7 +13,7 @@ function onFeedbackFormInput(e) {
 function onDomLoad() {
   const jsonData = localStorage.getItem('feedback-form-state');
   const userData = JSON.parse(jsonData);
-  console.log(userData);
+
   feedbackFormRef.elements.email.value = userData?.email || '';
   feedbackFormRef.elements.message.value = userData?.message || '';
 }
