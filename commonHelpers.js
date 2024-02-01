@@ -3,8 +3,7 @@ import"./assets/modulepreload-polyfill-ec808ebb.js";import{S as i}from"./assets/
   <a class="gallery-link" href="${p}">
     <img
       class="gallery-image"
-      src="${o}"
-      data-source="${p}"
+      src="${o}"  
       alt="${a}"
     />
   </a>
